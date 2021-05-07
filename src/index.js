@@ -85,3 +85,14 @@ const func2 = (str) => {
   return str;
 };
 console.log(func2("func2です"));
+
+//アロー関数 {}中身がreturnのみだと{}とreturn省略可能
+const func3 = (str) => str;
+console.log(func3("func3です"));
+
+// アロー関数 引数2つ
+const func4 = (num1, num2) => {
+  return num1 + num2;
+};
+
+console.log(func4(10, 20));
