@@ -154,7 +154,9 @@
 const arr4 = [10, 20];
 const arr5 = [30, 40];
 const arr6 = [...arr4];
+arr6[0] = 100;
 console.log(arr6);
+console.log(arr4);
 
-const arr7 = [...arr4, ...arr5];
-console.log(arr7);
+// const arr7 = [...arr4, ...arr5];
+// console.log(arr7);
