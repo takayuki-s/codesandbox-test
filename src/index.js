@@ -165,9 +165,9 @@
  * mapやfilter
  */
 
-const nameArr = ["田中", "山田", "鈴木"];
+const nameArray = ["田中", "山田", "鈴木"];
 // for (let index = 0; index < nameArr.length; index++) {
-//   console.log(nameArr[index]);
+//   console.log(`${index + 1}番目は${nameArr[index]}です。`);
 // }
 
 // const nameArr2 = nameArr.map((name) => {
@@ -175,10 +175,14 @@ const nameArr = ["田中", "山田", "鈴木"];
 // });
 // console.log(nameArr2);
 
-// nameArr.map((name) => console.log(name));
-
-const numArr = [1, 2, 3, 4, 5];
-const newNumArr = numArr.filter((num) => {
-  return num % 2 === 1;
+nameArray.map((name, index, array) => {
+  console.log(name);
+  console.log(index);
+  console.log(array);
 });
-console.log(newNumArr);
+
+// const numArr = [1, 2, 3, 4, 5];
+// const newNumArr = numArr.filter((num) => {
+//   return num % 2 === 1;
+// });
+// console.log(newNumArr);
