@@ -166,11 +166,13 @@
  */
 
 const nameArr = ["田中", "山田", "鈴木"];
-for (let index = 0; index < nameArr.length; index++) {
-  console.log(nameArr[index]);
-}
+// for (let index = 0; index < nameArr.length; index++) {
+//   console.log(nameArr[index]);
+// }
 
-const nameArr2 = nameArr.map((name) => {
-  return name;
-});
-console.log(nameArr2);
+// const nameArr2 = nameArr.map((name) => {
+//   return name;
+// });
+// console.log(nameArr2);
+
+nameArr.map((name) => console.log(name));
