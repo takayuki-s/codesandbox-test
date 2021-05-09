@@ -151,12 +151,26 @@
 
 // 配列のコピー、結合
 
-const arr4 = [10, 20];
-const arr5 = [30, 40];
-const arr6 = [...arr4];
-arr6[0] = 100;
-console.log(arr6);
-console.log(arr4);
+// const arr4 = [10, 20];
+// const arr5 = [30, 40];
+// const arr6 = [...arr4];
+// arr6[0] = 100;
+// console.log(arr6);
+// console.log(arr4);
 
 // const arr7 = [...arr4, ...arr5];
 // console.log(arr7);
+
+/**
+ * mapやfilter
+ */
+
+const nameArr = ["田中", "山田", "鈴木"];
+for (let index = 0; index < nameArr.length; index++) {
+  console.log(nameArr[index]);
+}
+
+const nameArr2 = nameArr.map((name) => {
+  return name;
+});
+console.log(nameArr2);
