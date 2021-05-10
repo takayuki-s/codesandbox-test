@@ -175,15 +175,24 @@ const nameArray = ["田中", "山田", "鈴木"];
 // });
 // console.log(nameArr2);
 
-nameArray.map((name, index, array) => {
-  console.log(name);
-  console.log(index);
-  console.log(array);
-  console.log(`名前は${name}です`);
-});
+// nameArray.map((name, index, array) => {
+//   console.log(name);
+//   console.log(index);
+//   console.log(array);
+//   console.log(`名前は${name}です`);
+// });
 
 // const numArr = [1, 2, 3, 4, 5];
 // const newNumArr = numArr.filter((num) => {
 //   return num % 2 === 1;
 // });
 // console.log(newNumArr);
+
+const newNameArray = nameArray.map((name) => {
+  if (name === "鈴木") {
+    return name;
+  } else {
+    return `${name}さん`;
+  }
+});
+console.log(newNameArray);
