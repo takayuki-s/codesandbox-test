@@ -165,7 +165,7 @@
  * mapやfilter
  */
 
-const nameArray = ["田中", "山田", "鈴木"];
+// const nameArray = ["田中", "山田", "鈴木"];
 // for (let index = 0; index < nameArr.length; index++) {
 //   console.log(`${index + 1}番目は${nameArr[index]}です。`);
 // }
@@ -188,11 +188,19 @@ const nameArray = ["田中", "山田", "鈴木"];
 // });
 // console.log(newNumArr);
 
-const newNameArray = nameArray.map((name) => {
-  if (name === "鈴木") {
-    return name;
-  } else {
-    return `${name}さん`;
-  }
-});
-console.log(newNameArray);
+// const newNameArray = nameArray.map((name) => {
+//   if (name === "鈴木") {
+//     return name;
+//   } else {
+//     return `${name}さん`;
+//   }
+// });
+// console.log(newNameArray);
+
+/**
+ * 三項演算子
+ */
+
+// ある条件 ? trueの時の処理 : falseの時の処理
+const val1 = 1 > 0 ? "trueです" : "falseです";
+console.log(val1);
