@@ -179,6 +179,7 @@ nameArray.map((name, index, array) => {
   console.log(name);
   console.log(index);
   console.log(array);
+  console.log(`名前は${name}です`);
 });
 
 // const numArr = [1, 2, 3, 4, 5];
